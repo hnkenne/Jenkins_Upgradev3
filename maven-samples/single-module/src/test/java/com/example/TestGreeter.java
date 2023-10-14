@@ -47,6 +47,6 @@ public class TestGreeter {
   public void greetShouldIncludeInspiringMessage() {
     String someone = "Hey you! Life is beautiful";
 
-    assertThat(greeter.greet(someone).length(), is(lessThan(someone.length())));
+    assertThat(greeter.greet(someone).length(), is(greaterThan(someone.length())));
   }
 }
